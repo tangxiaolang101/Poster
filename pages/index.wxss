@@ -1,0 +1,18 @@
+/* pages/index.wxss */
+.canvas {
+    position: fixed;
+    top: -999;
+    z-index: -1;
+    width: 560px;
+    height: 830px;
+    background: #fff;
+}
+
+
+.share-mask-image {
+    margin: 0 auto;
+    display: block;
+    width: 560rpx;
+    height: 830rpx;
+    border-radius: 18rpx;
+}

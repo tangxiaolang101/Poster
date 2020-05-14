@@ -1,0 +1,6 @@
+<!--pages/index.wxml-->
+<text>pages/index.wxml</text>
+
+<canvas canvas-id='PosterCanvas' class='canvas'></canvas>
+
+<image src='{{img}}' class='share-mask-image'></image>
