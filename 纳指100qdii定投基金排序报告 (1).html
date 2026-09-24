@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>纳指100 QDII 基金定投排序报告 · 2026-09</title>
+<style>
+:root{
+  --bg:#F4F8FC; --surface:#FFFFFF; --text:#1D2D3D; --muted:#667789;
+  --primary:#1769AA; --primary-soft:#E1EFFA; --accent:#EC825A; --accent-soft:#FCE8DF;
+  --border:#D8E3ED; --success:#31845C; --danger:#C84F55;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif;font-size:16px;line-height:1.75}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px 64px}
+h1{font-size:28px;line-height:1.35}
+h2{font-size:21px;color:var(--primary);margin:40px 0 14px;padding-left:12px;border-left:4px solid var(--primary)}
+h3{font-size:17px;margin:20px 0 8px}
+p{margin:10px 0}
+strong{color:var(--text)}
+a{color:var(--primary);text-decoration:underline;text-underline-offset:3px}
+.hero{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:32px 32px 28px;margin-top:28px}
+.hero .kicker{display:inline-block;background:var(--primary-soft);color:var(--primary);font-size:13px;font-weight:600;padding:3px 12px;border-radius:999px;margin-bottom:14px}
+.hero .meta{color:var(--muted);font-size:14px;margin-top:10px}
+.hero-grid{display:flex;gap:32px;align-items:center;flex-wrap:wrap;margin-top:22px}
+.hero-fig{flex:0 0 300px;max-width:100%}
+.hero-fig svg{width:100%;height:auto;display:block}
+.hero-points{flex:1 1 320px}
+.hero-points li{margin:8px 0;list-style:none;padding-left:20px;position:relative}
+.hero-points li::before{content:"";position:absolute;left:0;top:.72em;width:8px;height:8px;background:var(--primary);border-radius:2px}
+.hero-stats{display:flex;gap:16px;flex-wrap:wrap;margin-top:22px}
+.stat{flex:1 1 150px;background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
+.stat .v{font-size:24px;font-weight:700;color:var(--primary)}
+.stat .v em{font-style:normal;font-size:14px;font-weight:600}
+.stat .l{font-size:13px;color:var(--muted);margin-top:2px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px 28px;margin-top:16px}
+.callout{background:var(--accent-soft);border:1px solid var(--accent);border-radius:10px;padding:16px 20px;margin:16px 0}
+.callout.warn{background:#FBEFEF;border-color:var(--danger)}
+.callout p{margin:4px 0}
+.chart-box{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px 24px 16px;margin-top:16px}
+.chart-box svg{width:100%;height:auto;display:block}
+.chart-src{font-size:13px;color:var(--muted);margin-top:8px}
+.table-scroll{overflow-x:auto;margin-top:16px}
+table{border-collapse:collapse;width:100%;min-width:680px;background:var(--surface);font-size:15px}
+caption{text-align:left;font-size:14px;color:var(--muted);padding:8px 4px}
+th{background:var(--primary);color:#fff;text-align:left;padding:10px 12px;font-weight:600;white-space:nowrap}
+td{padding:10px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+tbody tr:nth-child(even){background:#F8FBFE}
+tbody tr:hover{background:var(--primary-soft)}
+.rank{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:var(--primary-soft);color:var(--primary);font-weight:700;font-size:14px}
+.rank.top{background:var(--primary);color:#fff}
+.tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:999px;background:var(--primary-soft);color:var(--primary);margin-left:6px;white-space:nowrap}
+.num{font-variant-numeric:tabular-nums;font-weight:600}
+.up{color:var(--success)}
+ol.reasons{padding-left:22px}
+ol.reasons li{margin:10px 0}
+ul.plain{padding-left:22px}
+ul.plain li{margin:8px 0}
+.note{font-size:14px;color:var(--muted)}
+.foot{margin-top:40px;padding-top:18px;border-top:1px solid var(--border);font-size:13px;color:var(--muted)}
+.foot p{margin:6px 0}
+@media (max-width:640px){
+  h1{font-size:23px}
+  .hero{padding:22px 20px}
+  .hero-fig{flex-basis:100%}
+  .card{padding:18px 18px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- 首屏 -->
+  <header class="hero" data-hero>
+    <span class="kicker">基金研究 · QDII 指数定投</span>
+    <h1>国内可买的「QQQ 类」纳指100 QDII 基金<br>长期定投排序报告</h1>
+    <p class="meta">数据截至 2026-09-10 ｜ 编制日期 2026-09-14 ｜ 数据来源：库库AI金融数据服务（基金档案·费率·净值增长）</p>
+    <div class="hero-grid">
+      <div class="hero-fig">
+        <svg viewBox="0 0 300 220" role="img" aria-label="示意图：七只纳指100基金近一年回报横向条形图">
+          <rect x="0" y="0" width="300" height="220" rx="10" fill="#1769AA"/>
+          <g font-family="inherit" font-size="11" fill="#CFE4F5">
+            <text x="18" y="34" font-size="13" font-weight="700" fill="#FFFFFF">近一年回报 TOP3（%）</text>
+            <rect x="18" y="52" width="230" height="18" rx="3" fill="#EC825A"/>
+            <text x="24" y="65" fill="#fff">博时联接 16.0</text>
+            <rect x="18" y="80" width="223" height="18" rx="3" fill="#3E86C2"/>
+            <text x="24" y="93" fill="#fff">广发ETF 15.5</text>
+            <rect x="18" y="108" width="216" height="18" rx="3" fill="#3E86C2"/>
+            <text x="24" y="121" fill="#fff">天弘 15.1</text>
+            <text x="18" y="156" fill="#CFE4F5">同跟踪纳斯达克100指数，</text>
+            <text x="18" y="174" fill="#CFE4F5">收益差≈费率+跟踪质量</text>
+            <text x="18" y="204" font-size="10" fill="#9FC2DE">区间：2025-09 ~ 2026-09-10</text>
+          </g>
+        </svg>
+      </div>
+      <ul class="hero-points">
+        <li><strong>同一指数，毛收益趋同</strong>：国内约15只QDII跟踪同一纳斯达克100指数，长期到手收益差只来自费率、跟踪误差、限购与溢价。</li>
+        <li><strong>排序依据</strong>：近1年净值增长（跟踪质量代理指标）+ 综合费率 + 定投可行性。</li>
+        <li><strong>第一名</strong>：博时纳斯达克100ETF联接（近1年 <strong>16.0%</strong>）。</li>
+      </ul>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="v">16.0<em>%</em></div><div class="l">组内最高近1年回报（博时联接）</div></div>
+      <div class="stat"><div class="v">3.5<em>pct</em></div><div class="l">同指数下首尾基金近1年差距</div></div>
+      <div class="stat"><div class="v">0.25~0.9<em>%</em></div><div class="l">样本管理费率区间</div></div>
+      <div class="stat"><div class="v">100~1000<em>元</em></div><div class="l">场外常见单日限购额度（需逐只确认）</div></div>
+    </div>
+  </header>
+
+  <!-- 前提 -->
+  <h2>一、先厘清：没有「QQQ 基金」，只有纳指100 QDII</h2>
+  <div class="card">
+    <p>QQQ 本身在美股上市，国内账户无法直接购买。国内的对应标的是<strong>跟踪纳斯达克100指数（QQQ 的标的指数）的 QDII 基金</strong>——包括场外指数基金、ETF 联接基金和场内 ETF。</p>
+    <p>由于所有产品跟踪<strong>同一个指数</strong>，它们的长期「毛收益」几乎一致，无法也不应该去预测哪只「涨得更多」。最终到手收益的差异只由四件事决定，本报告的排序逻辑也由此展开：</p>
+    <ol class="reasons">
+      <li><strong>综合费率</strong>（管理费+托管费+销售服务费）——唯一能提前确定的「未来收益差」；</li>
+      <li><strong>跟踪质量</strong>——同一指数下近1年净值增长的差距，基本等于费率与跟踪误差的综合拖累；</li>
+      <li><strong>定投可行性</strong>——QDII 外汇额度紧张，多数场外纳指基金长期限购（常见单日 100~1000 元），限购过死会让定投失去意义；</li>
+      <li><strong>买入成本</strong>——场内 ETF 在溢价率高（&gt;2%）时买入会额外亏损。</li>
+    </ol>
+  </div>
+
+  <!-- 图表 -->
+  <h2>二、近一年净值增长对比</h2>
+  <div class="chart-box">
+    <svg viewBox="0 0 820 320" role="img" aria-label="七只纳指100 QDII 基金近一年回报与今年以来回报分组柱状图">
+      <!-- axes -->
+      <line x1="60" y1="20" x2="60" y2="260" stroke="#D8E3ED"/>
+      <line x1="60" y1="260" x2="800" y2="260" stroke="#D8E3ED"/>
+      <g font-size="11" fill="#667789" text-anchor="end">
+        <text x="52" y="264">0%</text>
+        <text x="52" y="204">4%</text>
+        <text x="52" y="144">8%</text>
+        <text x="52" y="84">12%</text>
+        <text x="52" y="30">16%</text>
+      </g>
+      <g stroke="#EDF3F8">
+        <line x1="60" y1="200" x2="800" y2="200"/>
+        <line x1="60" y1="140" x2="800" y2="140"/>
+        <line x1="60" y1="80" x2="800" y2="80"/>
+      </g>
+      <!-- bars: 1Y scale 15px per 1%; YTD likewise -->
+      <!-- 博时 16.00 / 11.19 -->
+      <g>
+        <rect x="90" y="20" width="34" height="240" rx="2" fill="#1769AA"/>
+        <rect x="128" y="92.2" width="34" height="167.8" rx="2" fill="#EC825A"/>
+        <text x="107" y="14" font-size="12" font-weight="700" fill="#1769AA" text-anchor="middle">16.0</text>
+        <text x="145" y="86" font-size="12" font-weight="700" fill="#EC825A" text-anchor="middle">11.2</text>
+        <text x="126" y="282" font-size="12" fill="#1D2D3D" text-anchor="middle">博时联接</text>
+      </g>
+      <!-- 广发ETF 15.54 / 10.44 -->
+      <g>
+        <rect x="196" y="26.9" width="34" height="233.1" rx="2" fill="#1769AA"/>
+        <rect x="234" y="103.4" width="34" height="156.6" rx="2" fill="#EC825A"/>
+        <text x="213" y="21" font-size="12" font-weight="700" fill="#1769AA" text-anchor="middle">15.5</text>
+        <text x="251" y="97" font-size="12" font-weight="700" fill="#EC825A" text-anchor="middle">10.4</text>
+        <text x="232" y="282" font-size="12" fill="#1D2D3D" text-anchor="middle">广发ETF</text>
+      </g>
+      <!-- 天弘 15.06 / 10.33 -->
+      <g>
+        <rect x="302" y="34.1" width="34" height="225.9" rx="2" fill="#1769AA"/>
+        <rect x="340" y="105.1" width="34" height="154.9" rx="2" fill="#EC825A"/>
+        <text x="319" y="28" font-size="12" font-weight="700" fill="#1769AA" text-anchor="middle">15.1</text>
+        <text x="357" y="99" font-size="12" font-weight="700" fill="#EC825A" text-anchor="middle">10.3</text>
+        <text x="338" y="282" font-size="12" fill="#1D2D3D" text-anchor="middle">天弘</text>
+      </g>
+      <!-- 宝盈 14.88 / 10.02 -->
+      <g>
+        <rect x="408" y="36.8" width="34" height="223.2" rx="2" fill="#1769AA"/>
+        <rect x="446" y="109.7" width="34" height="150.3" rx="2" fill="#EC825A"/>
+        <text x="425" y="31" font-size="12" font-weight="700" fill="#1769AA" text-anchor="middle">14.9</text>
+        <text x="463" y="104" font-size="12" font-weight="700" fill="#EC825A" text-anchor="middle">10.0</text>
+        <text x="444" y="282" font-size="12" fill="#1D2D3D" text-anchor="middle">宝盈</text>
+      </g>
+      <!-- 广发联接F 14.43 / 9.87 -->
+      <g>
+        <rect x="514" y="43.6" width="34" height="216.4" rx="2" fill="#1769AA"/>
+        <rect x="552" y="112" width="34" height="148" rx="2" fill="#EC825A"/>
+        <text x="531" y="38" font-size="12" font-weight="700" fill="#1769AA" text-anchor="middle">14.4</text>
+        <text x="569" y="106" font-size="12" font-weight="700" fill="#EC825A" text-anchor="middle">9.9</text>
+        <text x="550" y="282" font-size="12" fill="#1D2D3D" text-anchor="middle">广发联接</text>
+      </g>
+      <!-- 建信 13.87 / 9.39 -->
+      <g>
+        <rect x="620" y="52" width="34" height="208" rx="2" fill="#1769AA"/>
+        <rect x="658" y="119.2" width="34" height="140.8" rx="2" fill="#EC825A"/>
+        <text x="637" y="46" font-size="12" font-weight="700" fill="#1769AA" text-anchor="middle">13.9</text>
+        <text x="675" y="113" font-size="12" font-weight="700" fill="#EC825A" text-anchor="middle">9.4</text>
+        <text x="656" y="282" font-size="12" fill="#1D2D3D" text-anchor="middle">建信</text>
+      </g>
+      <!-- 汇添富 12.53 / 9.00 -->
+      <g>
+        <rect x="726" y="72.1" width="34" height="187.9" rx="2" fill="#1769AA"/>
+        <rect x="764" y="125" width="34" height="135" rx="2" fill="#EC825A" opacity="0"/>
+        <text x="743" y="66" font-size="12" font-weight="700" fill="#1769AA" text-anchor="middle">12.5</text>
+        <text x="745" y="282" font-size="12" fill="#1D2D3D" text-anchor="middle">汇添富</text>
+      </g>
+      <!-- legend -->
+      <g font-size="12" fill="#1D2D3D">
+        <rect x="600" y="296" width="12" height="12" fill="#1769AA" rx="2"/><text x="618" y="306">近一年回报（%）</text>
+        <rect x="716" y="296" width="12" height="12" fill="#EC825A" rx="2"/><text x="734" y="306">今年以来（%）</text>
+      </g>
+    </svg>
+    <p class="chart-src">数据截至 2026-09-10，来源：库库AI金融数据服务 · 基金净值增长。注：各行为不同份额类别（如 I 类、F 类、D 类、E 类、A 类），同一基金不同份额费率不同，回报存在小幅差异；汇添富「今年以来」为 9.0%。</p>
+  </div>
+
+  <!-- 排序表 -->
+  <h2>三、综合排序与理由（面向场外长期定投）</h2>
+  <div class="table-scroll">
+    <table>
+      <caption>排序 = 近1年净值增长（跟踪质量代理）× 综合费率 × 定投可行性；同一指数下的相对排序，非收益预测</caption>
+      <thead>
+        <tr><th scope="col">排名</th><th scope="col">基金</th><th scope="col">近1年</th><th scope="col">今年以来</th><th scope="col">排序理由</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="rank top">1</span></td>
+          <td><strong>博时纳斯达克100ETF联接（QDII）</strong></td>
+          <td class="num up">16.00%</td><td class="num">11.19%</td>
+          <td>近1年净值增长全组最高；目标 ETF（513500）为老牌大规模纳指ETF，流动性与跟踪质量占优；2022年成立已过建仓磨合期。</td>
+        </tr>
+        <tr>
+          <td><span class="rank top">2</span></td>
+          <td><strong>广发纳斯达克100ETF / 联接（QDII）</strong><span class="tag">场内159941</span></td>
+          <td class="num up">15.54%<span class="note">（联接14.43%）</span></td><td class="num">10.44%</td>
+          <td>场内纳指ETF规模与成交额全市场领先；跟踪误差控制目标最严（日均偏离≤0.2%、年误差≤2%）。有股票账户可买 ETF，纯场外定投选联接。</td>
+        </tr>
+        <tr>
+          <td><span class="rank top">3</span></td>
+          <td><strong>天弘纳斯达克100指数（QDII）</strong></td>
+          <td class="num up">15.06%</td><td class="num">10.33%</td>
+          <td>2023年成立的发起式基金，净值表现第一梯队；天弘系指数产品费率一贯偏低，长期复利下成本优势明显。</td>
+        </tr>
+        <tr>
+          <td><span class="rank">4</span></td>
+          <td><strong>宝盈纳斯达克100指数（QDII）</strong></td>
+          <td class="num">14.88%</td><td class="num">10.02%</td>
+          <td>近1年表现尚可。⚠️ 样本中观察到有产品采用<strong>浮动管理费</strong>（前一年收益≥8%时管理费最高2%、&lt;-5%时收0%），牛市费率侵蚀明显——定投前须确认所买份额的费率结构。</td>
+        </tr>
+        <tr>
+          <td><span class="rank">5</span></td>
+          <td><strong>国泰纳斯达克100（160213）</strong><span class="tag">老牌LOF</span></td>
+          <td class="num note">未在本次样本</td><td class="num note">—</td>
+          <td>国内最早的纳指QDII之一、运作超10年、规模大，全组唯一以「纳斯达克100×100%」为业绩基准的老牌产品，适合作备选。</td>
+        </tr>
+        <tr>
+          <td><span class="rank">6</span></td>
+          <td><strong>建信纳斯达克100指数（QDII）</strong></td>
+          <td class="num">13.87%</td><td class="num">9.39%</td>
+          <td>2010年成立、历史最长，但跟踪误差控制目标最宽松（年误差≤5%），近1年回报样本中偏低。</td>
+        </tr>
+        <tr>
+          <td><span class="rank">7</span></td>
+          <td><strong>汇添富纳斯达克100ETF联接（QDII）</strong></td>
+          <td class="num">12.53%</td><td class="num">9.00%</td>
+          <td>近1年净值增长样本中垫底，费用与跟踪综合拖累较明显。</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 依据 -->
+  <h2>四、排序的三条核心依据</h2>
+  <div class="card">
+    <h3>1. 费率是唯一能提前确定的「未来收益差」</h3>
+    <p>本次样本管理费从 <strong>0.25% 到 0.90%</strong> 不等。同一指数下，年费率差 0.3 个百分点，20 年复利终值约差 <strong>6%</strong>。定投是超长周期行为，费率的权重应高于短期业绩。</p>
+    <h3>2. 近1年净值差 ≈ 跟踪质量 + 费率的综合结果</h3>
+    <p>同一指数下，第一名（16.0%）与末名（12.5%）相差 <strong>3.5 个百分点</strong>——这不是运气，而是成本与跟踪误差造成，且会持续存在。</p>
+    <h3>3. 定投可行性比排名更重要</h3>
+    <p>QDII 外汇额度紧张，多数纳指场外基金长期处于<strong>单日限购 100~1000 元</strong>甚至暂停申购状态。一只排名第一但每天只能买 100 元的基金，定投意义有限。下单前务必在销售平台确认目标基金<strong>当前申购限额</strong>；限额过死时可考虑场内 ETF（513100、159941、513300 等），但溢价率 &gt;2% 时不要追。</p>
+  </div>
+
+  <!-- 实操 -->
+  <h2>五、定投实操要点</h2>
+  <div class="card">
+    <ul class="plain">
+      <li><strong>份额类别</strong>：同一只基金的 A/C/D/E/F/I 份额费率不同。长期定投优先选 <strong>A 类</strong>（申购费打一折后约 0.1%~0.15%，无销售服务费）；短持才考虑 C 类。</li>
+      <li><strong>红利方式</strong>：选<strong>红利再投资</strong>，避免现金分红打断复利。</li>
+      <li><strong>买入节奏</strong>：场内 ETF 折溢价每天可见，溢价 &gt;2% 时暂停买入或改场外申购。</li>
+      <li><strong>组合角色</strong>：纳指100是进攻型资产（科技股权重高、波动大），定投金额建议控制在权益资产的可承受比例内，并与 A 股资产做分散——你的现有持仓（北方华创、工业富联、东鹏饮料）均为 A 股人民币资产，纳指定投恰好提供美元资产与美股科技敞口的分散价值，但同时注意工业富联与纳指科技板块存在共振风险。</li>
+    </ul>
+  </div>
+
+  <!-- 风险 -->
+  <h2>六、风险提示</h2>
+  <div class="callout warn">
+    <p>⚠️ <strong>估值风险</strong>：纳指100当前估值处于历史高位区间，过去一年的高收益不代表未来；本报告的排序是同指数下的相对比较，<strong>不是收益预测</strong>。</p>
+    <p>⚠️ <strong>汇率风险</strong>：人民币份额 = 美元资产 × 汇率双重波动，人民币升值会侵蚀收益。</p>
+    <p>⚠️ <strong>限购/暂停申购</strong>：QDII 额度动态变化，限购状态以销售平台实时公告为准。</p>
+    <p>⚠️ 本报告基于公开数据整理，<strong>不构成投资建议</strong>；基金过往业绩不预示未来表现，市场有风险，投资需谨慎。</p>
+  </div>
+
+  <footer class="foot">
+    <p>数据来源：库库AI金融数据服务（公募基金档案、费率、净值增长序列），数据截至 2026-09-10，检索与编制日期 2026-09-14。</p>
+    <p>口径说明：回报为份额净值区间增长率，未扣申购费；不同份额类别费率不同，表中已注明类别差异；场外限购额度为行业常见区间，需以各基金最新公告为准。</p>
+  </footer>
+
+</main>
+</body>
+</html>
